@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .wrap {
+      width: 200px;
+      height: 300px;
+      margin: 20px auto;
+      text-align: center;
+      border: 1px solid #111;
+      border-radius: 8px;
+      background-image: linear-gradient(to bottom right, blue ,yellow);
+      
+    }
+
+    .wrap:hover {
+      box-shadow: 10px 10px 10px #111;
+    }
+
+    .btn {
+      display: inline-block;
+      width: 60px;
+      height: 45px;
+      margin-top: 100px;
+      line-height: 45px;
+      font-size: 14px;
+      color: #444;
+      text-decoration: none;
+      border: 1px solid #111;
+      border-radius: 20px 20px 20px 20px / 10px 10px 10px 10px;
+      background-image: radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet);
+    }
+
+    .btn:hover {
+      box-shadow: 0px 0px 5px #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a href="#" class="btn">点击</a>
+  </div>
+</body>
+</html>

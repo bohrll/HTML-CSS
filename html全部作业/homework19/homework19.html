@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <style>
+    a {
+      color: #666;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #2288f6;
+      text-decoration: none;
+    }
+
+    .w1222 {
+      width: 1222px;
+      margin: 0 auto;
+    }
+    
+    .w1054 {
+      width: 1054px;
+      margin: 0 auto;
+    }
+
+    .c228 {
+      color: #2288f6;
+    }
+
+    .c333 {
+      color: #333;
+    }
+
+    .c666 {
+      color: #666;
+    }
+
+    .cfff {
+      color: #fff;
+    }
+
+    .c888{
+      color: #888;
+    }
+
+    .fz14 {
+      font-size: 14px;
+    }
+
+    .fz24 {
+      font-size: 24px;
+    }
+
+    .fw400 {
+      font-weight: 400;
+    }
+
+    .lh24 {
+      line-height: 24px;
+    }
+
+    .lh52 {
+      line-height: 52px;
+    }
+
+    .fl {
+      float: left
+    }
+
+    .fr {
+      float: right
+    }
+
+    .ali-center{
+      text-align: center;
+    }
+    /*header*/
+
+    .nav {
+      width: 648px;
+    }
+
+    .nav ul li {
+      float: left;
+      font-size: 18px;
+      line-height: 100px;
+      padding: 0 20px;
+    }
+
+    /*banner*/
+
+    .banner{
+      height: 620px;
+      background: #fff url(img/banner.jpg) no-repeat center/cover;
+    }
+
+    /*container*/
+    
+    .container{
+      padding-bottom: 60px;
+    }
+
+    .con-title{
+      text-align: center;
+    }
+
+    .con-title:before,
+    .con-title:after{
+      display: inline-block;
+      content: '';
+      width: 417px;
+      height: 1px;
+      background-color: #ccc;
+    }
+
+    .con-des {
+      padding: 28px 106px 0;
+      text-align: center;
+    }
+
+    .con-servebgc {
+      background-color: #2288f6;
+    }
+
+    .con-serve {
+      padding-top: 64px;
+    }
+
+    .con-serve .con-wrap{
+      padding-top: 50px;
+      padding-bottom: 60px;
+    }
+
+    .con-serve .con-wrap li{
+      box-sizing: border-box;
+      float: left;
+      width: 320px;
+      height: 510px;
+      padding: 42px 42px 0;
+      border: 1px solid #e7e8e9;
+      background-color: #fff;
+    }
+
+    .con-serve .con-wrap .con-list-title{
+      line-height: 52px;
+      padding-top: 28px;
+    }
+
+    .con-serve .con-wrap .con-list-btn {
+      display: block;
+      width: 150px;
+      margin: 35px auto 0;
+      line-height: 38px;
+      color: #fff;
+      background-color: #ff9412;
+      border-radius: 4px;
+    }
+
+    .con-serve .con-wrap .con-wrap-mid{
+      margin:0 47px 0;
+    }
+/*con-case*/
+    .con-case{
+      padding-top: 124px;
+      padding-bottom: 60px;
+    }
+
+    .con-case .con-wrap{
+      position: relative;
+      margin-top: 44px;
+    }
+
+    .con-case .con-wrap li {
+      position: relative;
+      float: left;
+      width: 324px;
+      height: 211px;
+    }
+
+    .con-case .case-des{
+      position: absolute;
+      bottom: 0px;
+      line-height: 46px;
+      background-color: rgba(0, 0, 0, .5);
+      width: 100%;
+
+    }
+
+    .con-case .case-mid{
+      margin: 0 40px ;
+    }
+
+    .con-case .case-mask{
+      display: none;
+      position:absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, .5) url(img/fdj.png) no-repeat center;
+    }
+
+    .con-case li:hover .case-mask{
+      display: block;
+    }
+
+    .con-case .con-wrap:before,
+    .con-case .con-wrap:after {
+      content: '<';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;  
+      width: 60px;
+      height: 60px;
+      font-size: 52px;
+      line-height: 54px;
+      color: #fff;
+      text-align: center;
+      background-color: rgba(0, 0, 0, .6);
+      border-radius: 50%;
+    }
+
+    .con-case .con-wrap:before {
+      left: -90px;
+    }
+
+    .con-case .con-wrap:after {
+      content: '>';
+      right: -90px;
+    }
+
+  /*con-madia*/
+    .con-media{
+      padding-top: 64px;
+      padding-bottom: 200px;
+    }
+
+    .con-media .con-wrap{
+      overflow: hidden;
+      position: relative;
+      width: 1110px;
+      height: 240px;
+      left: -35px;
+      padding-top: 50px;
+    }
+
+    .con-media .con-wrap ul{
+      overflow: hidden;
+      position: relative;
+      left: -15px;
+      width: 1130px;
+      height: 245px;
+    }
+
+    .con-media .con-wrap li{
+      float: left;
+      width: 225px;
+      height: 80px;
+      line-height: 80px;
+      text-align: center;
+      border-right: 1px dashed #ccc;
+      border-bottom: 1px dashed #ccc;
+    }
+
+/* footer */
+    .footer{
+      padding-top: 50px;
+      padding-bottom: 57px;
+      background-color: #212425;
+      font-size: 14px;
+    }
+
+    .footer-nav a{
+      padding: 0 10px 0;
+      color: #f0f1f1;
+    }
+
+    .footer-nav span{
+      color: #7e7e7e;
+    }
+
+    .footer-ref{
+      padding-top: 24px;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="w1222 clearfix">
+      <div class="logo fl">
+        <h1>
+          <a href="#">
+          <img src="img/logo.png" width="223" height="100" alt="logo">
+        </a>
+        </h1> 
+      </div>
+      <div class="nav fr">
+        <ul class="clearfix">
+          <li><a href="#">首页</a></li>
+          <li><a href="#">云云商城</a></li>
+          <li><a href="#">智慧门店</a></li>
+          <li><a href="#">营销平台</a></li>
+          <li><a href="#">媒体联盟</a></li>
+          <li><a href="#">关于云道</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="banner">
+  </div>
+
+  <div class="container ">
+    <div class="con-servebgc">
+      <div class="con-serve w1054">
+      <h2 class="con-title">
+        <img src="img/ser.png" width="167" height="47" alt="server">
+      </h2>
+      <p class="con-des fz14 lh24 c666 ">
+        shopcmd云道，国内领先的独立电商解决方案及全渠道营销平台。完整的产品体系，简约的系统，个性化前端，全覆盖多渠道营销体系...
+        我们致力于打造一个服务于品牌商城/独立电商的完整生态，让企业的独立电之路变得更简单，也更有价值！
+      </p>
+      <div class="con-wrap">
+        <ul class="clearfix">
+          <li>
+            <img src="img/icon1.png" width="248" height="132" alt="!">
+            <h3 class="con-list-title ali-center fw400 fz24">我是卖家</h3>
+            <p class="lh24 fz14 c666">
+              shopcmd云电商解决方案，我们不仅
+              仅是领先的独立商城建站系统。我们
+              从互联网时代品牌建设和品牌营销的全
+              新视角，赋予了品牌商城及独立电商更
+              大的生存空间和存在价值！
+            </p>
+            <a class="con-list-btn ali-center fz14">我要建站</a>
+          </li>
+          <li class="con-wrap-mid">
+            <img src="img/icon1.png" width="248" height="132" alt="!">
+            <h3 class="con-list-title ali-center fw400 fz24">我要营销</h3>
+            <p class="lh24 fz14 c666">
+              shopcmd云电商解决方案，我们不仅
+              仅是领先的独立商城建站系统。我们
+              从互联网时代品牌建设和品牌营销的全
+              新视角，赋予了品牌商城及独立电商更
+              大的生存空间和存在价值！
+            </p>
+            <a class="con-list-btn ali-center fz14">我要推广</a>
+
+          </li>
+          <li>
+            <img src="img/icon1.png" width="248" height="132" alt="!">
+            <h3 class="con-list-title ali-center fw400 fz24">媒体合作</h3>
+            <p class="lh24 fz14 c666">
+              shopcmd云电商解决方案，我们不仅
+              仅是领先的独立商城建站系统。我们
+              从互联网时代品牌建设和品牌营销的全
+              新视角，赋予了品牌商城及独立电商更
+              大的生存空间和存在价值！
+            </p>
+            <a class="con-list-btn ali-center fz14">我要合作</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    
+    <div class="con-case w1054">
+      <h2 class="con-title">
+        <img src="img/case.png" width="167" height="47" alt="!">
+      </h2>
+      <div class="con-wrap">
+        <ul class="clearfix">
+          <li>
+            <img src="img/pro1.png" width="324" height="211" alt="">
+            <p class="case-des fz14 cfff ali-center">帮助中小企业快速开启阿萨德打撒电子商务</p>
+            <div class="case-mask"></div>
+          </li>
+          <li class="case-mid">
+            <img src="img/pro1.png" width="324" height="211" alt="">
+            <p class="case-des  fz14 cfff ali-center">帮助中小企业快速开启阿萨德打撒电子商务</p>
+            <div class="case-mask"></div>
+          </li>
+          <li>
+            <img src="img/pro1.png" width="324" height="211" alt="">
+            <p class="case-des fz14 cfff ali-center">帮助中小企业快速开启阿萨德打撒电子商务</p>
+            <div class="case-mask"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="con-media w1054">
+      <h2 class="con-title">
+        <img src="img/media.png" width="167" height="47" alt="!">
+      </h2>
+      <div class="con-wrap">
+        <ul class="clearfix">
+          <li><a href="#"><img src="img/tb.png" alt="!" width="103" height="40"></a></li>
+          <li><a href="#"><img src="img/tb.png" alt="!" width="103" height="40"></a></li>
+          <li><a href="#"><img src="img/tb.png" alt="!" width="103" height="40"></a></li>
+          <li><a href="#"><img src="img/tb.png" alt="!" width="103" height="40"></a></li>
+          <li><a href="#"><img src="img/tb.png" alt="!" width="103" height="40"></a></li>
+          <li><a href="#"><img src="img/tb.png" alt="!" width="103" height="40"></a></li>
+          <li><a href="#"><img src="img/tb.png" alt="!" width="103" height="40"></a></li>
+          <li><a href="#"><img src="img/tb.png" alt="!" width="103" height="40"></a></li>
+          <li><a href="#"><img src="img/tb.png" alt="!" width="103" height="40"></a></li>
+          <li><a href="#"><img src="img/tb.png" alt="!" width="103" height="40"></a></li>
+          <li><a href="#"><img src="img/tb.png" alt="!" width="103" height="40"></a></li>
+          <li><a href="#"><img src="img/tb.png" alt="!" width="103" height="40"></a></li>
+          <li><a href="#"><img src="img/tb.png" alt="!" width="103" height="40"></a></li>
+          <li><a href="#"><img src="img/tb.png" alt="!" width="103" height="40"></a></li>
+          <li><a href="#"><img src="img/tb.png" alt="!" width="103" height="40"></a></li>
+        </ul>
+      </div>  
+      
+    </div>
+  </div>
+
+  <div class="footer ali-center">
+    <p class="footer-nav">
+      <a href="">shopcmd</a>
+      <span>|</span>
+      <a href="">首页</a>
+      <span>|</span>
+      <a href="">官网云商城</a>
+      <span>|</span>
+      <a href="">智慧门店</a>
+      <span>|</span>
+      <a href="">营销平台</a>
+      <span>|</span>
+      <a href="">媒体联盟</a>
+      <span>|</span>
+      <a href="">关于我们</a>
+    </p>
+    <p class="footer-ref c888">©Copyright 2015 苏州海云网络科技有限公司版权所有 | 苏ICP备15038170号-3</p>
+  </div>
+</body>
+</html>

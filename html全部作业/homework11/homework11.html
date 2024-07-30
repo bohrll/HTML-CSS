@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      color:#333;
+      text-decoration: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    a:hover {
+      color:blue;
+      text-decoration: underline;
+    }  
+    ul {
+      list-style: none;
+    } 
+    div {
+      width: 750px;
+      margin: 100px auto;
+      font-size: 14px;
+      font-family: "微软雅黑";
+    }
+    li {
+      display:inline-block;
+      width:300px;
+      margin-right:65px;
+      line-height: 30px;
+    }
+    div li a:before {
+      content: '';
+      display: inline-block;
+      line-height: 20px;
+      width: 20px;
+      height: 20px;
+      font-size: 12px;
+      margin-right: 4px;
+      font-family: '微软雅黑';
+      color: white;
+      background: url(img/top_rank.png) no-repeat -50px -50px;
+    }
+    a.one:before {
+      content:'1';
+      padding-left: 6px;
+      background: url(img/top_rank.png) no-repeat -10px -10px;
+    }
+    a.one:after {
+      content:'';
+      display:inline-block;
+      line-height:20px;
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      background: url(img/top_icon.png) no-repeat -10px -10px;
+    }
+    a.two:before {
+      content:'2';
+      padding-left: 6px;
+      background: url(img/top_rank.png) no-repeat -50px -10px;
+    }
+    a.two:after {
+      content:'';
+      display:inline-block;
+      line-height:20px;
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      background: url(img/top_icon.png) no-repeat -46px -10px;
+    }
+    a.three:before {
+      content:'3';
+      padding-left: 6px;
+      background: url(img/top_rank.png) no-repeat -10px -50px;
+    }
+    a.four:before {
+      content:'4';
+      color:black;
+    }
+    a.five:before {
+      content:'5';
+      color:black;
+    }
+    a.six:before {
+      content:'6';
+      color:black;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <ul>
+      <li>
+        <a class="one" href="#">高福称北京疫情可能要前推一个月</a> <span class="new"></span>
+      </li>
+      <li>
+        <a class="four" href="#">白百合方否认新恋情</a>
+      </li>
+      <li>
+        <a class="two" href="#">北京新发地市场商户回浙江后确诊</a> <span class="hot"></span>
+      </li>
+      <li>
+        <a class="five" href="#">男童在确诊患者被子上玩被感染</a>
+      </li>
+      <li>
+        <a class="three" href="#">涉事教师承认曾掌掴坠楼小学生</a>
+      </li>
+      <li>
+        <a class="six" href="#">110万买奔驰越野车高速熄火5次</a>
+      </li>
+    </ul>
+</body>
+</html>
